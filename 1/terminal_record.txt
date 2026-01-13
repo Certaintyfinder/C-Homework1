@@ -1,0 +1,242 @@
+(base) S:\us\homework\c++\01\lec01_files>g++
+g++: fatal error: no input files
+compilation terminated.
+
+(base) S:\us\homework\c++\01\lec01_files>g++ vector_simple_demo.cpp -o vector
+vector_simple_demo.cpp:5:13: warning: use of 'auto' in parameter declaration only available with '-std=c++20' or '-fconcepts' [-Wc++20-extensions]
+    5 | auto square(auto x) { return x * x; }
+      |             ^~~~
+
+(base) S:\us\homework\c++\01\lec01_files>g++ -std=c++20 vector_simple_demo.cpp -o vector
+
+(base) S:\us\homework\c++\01\lec01_files>vector.exe
+1, 4, 16, 
+(base) S:\us\homework\c++\01\lec01_files>ls  
+Frame                   Frame2                  PersonalizedHello       vector.exe              vector_simple_demo.cpp
+
+(base) S:\us\homework\c++\01\lec01_files>cd PersonalizedHello
+
+(base) S:\us\homework\c++\01\lec01_files\PersonalizedHello>mkdir build
+
+(base) S:\us\homework\c++\01\lec01_files\PersonalizedHello>cd build
+
+(base) S:\us\homework\c++\01\lec01_files\PersonalizedHello\build>cmake ..
+-- Building for: Visual Studio 17 2022
+CMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+-- Selecting Windows SDK version 10.0.22621.0 to target Windows 10.0.26100.
+-- The C compiler identification is MSVC 19.43.34808.0
+-- The CXX compiler identification is MSVC 19.43.34808.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.43.34808/bin/Hostx64/x64/cl.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.43.34808/bin/Hostx64/x64/cl.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (4.3s)
+-- Generating done (0.0s)
+-- Build files have been written to: S:/us/homework/c++/01/lec01_files/PersonalizedHello/build
+
+(base) S:\us\homework\c++\01\lec01_files\PersonalizedHello\build>cmake --build
+Usage: cmake --build <dir>             [options] [-- [native-options]]
+       cmake --build --preset <preset> [options] [-- [native-options]]
+Options:
+  <dir>          = Project binary directory to be built.
+  --preset <preset>, --preset=<preset>
+                 = Specify a build preset.
+  --list-presets[=<type>]
+                 = List available build presets.
+  --parallel [<jobs>], -j [<jobs>]
+                 = Build in parallel using the given number of jobs.
+                   If <jobs> is omitted the native build tool's
+                   default number is used.
+                   The CMAKE_BUILD_PARALLEL_LEVEL environment variable
+                   specifies a default parallel level when this option
+                   is not given.
+  -t <tgt>..., --target <tgt>...
+                 = Build <tgt> instead of default targets.
+  --config <cfg> = For multi-configuration tools, choose <cfg>.
+  --clean-first  = Build target 'clean' first, then build.
+                   (To clean only, use --target 'clean'.)
+  --resolve-package-references={on|only|off}
+                 = Restore/resolve package references during build.
+  -v, --verbose  = Enable verbose output - if supported - including
+                   the build commands to be executed.
+  --             = Pass remaining options to the native tool.
+
+(base) S:\us\homework\c++\01\lec01_files\PersonalizedHello\build>cmake --build .
+适用于 .NET Framework MSBuild 版本 17.13.15+18b3035f6
+
+  1>Checking Build System
+  Building Custom Rule S:/us/homework/c++/01/lec01_files/PersonalizedHello/CMakeLists.txt
+  personalized_hello.cpp
+  personalized_hello.vcxproj -> S:\us\homework\c++\01\lec01_files\PersonalizedHello\build\Debug\personalized_hello.exe
+  Building Custom Rule S:/us/homework/c++/01/lec01_files/PersonalizedHello/CMakeLists.txt
+
+(base) S:\us\homework\c++\01\lec01_files\PersonalizedHello\build>Debug personallized_hello.exe
+'Debug' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+
+(base) S:\us\homework\c++\01\lec01_files\PersonalizedHello\build>Debug/personallized_hello.exe
+'Debug' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+
+(base) S:\us\homework\c++\01\lec01_files\PersonalizedHello\build>./Debug/personallized_hello.exe
+'.' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+
+(base) S:\us\homework\c++\01\lec01_files\PersonalizedHello\build>/Debug/personallized_hello.exe
+系统找不到指定的路径。
+
+(base) S:\us\homework\c++\01\lec01_files\PersonalizedHello\build>cd Debug
+
+(base) S:\us\homework\c++\01\lec01_files\PersonalizedHello\build\Debug>personallized_hello.exe
+'personallized_hello.exe' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+
+(base) S:\us\homework\c++\01\lec01_files\PersonalizedHello\build\Debug>personalized_hello.exe
+What's your name? hongruicao
+Hello, hongruicao!
+
+(base) S:\us\homework\c++\01\lec01_files\PersonalizedHello\build\Debug>cd ../../
+
+(base) S:\us\homework\c++\01\lec01_files\PersonalizedHello>cd ../
+
+(base) S:\us\homework\c++\01\lec01_files>cd Frame
+
+(base) S:\us\homework\c++\01\lec01_files\Frame>mkdir build
+
+(base) S:\us\homework\c++\01\lec01_files\Frame>cd build
+
+(base) S:\us\homework\c++\01\lec01_files\Frame\build>camke ..
+'camke' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+
+(base) S:\us\homework\c++\01\lec01_files\Frame\build>cmake ..
+-- Building for: Visual Studio 17 2022
+CMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+-- Selecting Windows SDK version 10.0.22621.0 to target Windows 10.0.26100.
+-- The C compiler identification is MSVC 19.43.34808.0
+-- The CXX compiler identification is MSVC 19.43.34808.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.43.34808/bin/Hostx64/x64/cl.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.43.34808/bin/Hostx64/x64/cl.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (2.7s)
+-- Generating done (0.0s)
+-- Build files have been written to: S:/us/homework/c++/01/lec01_files/Frame/build
+
+(base) S:\us\homework\c++\01\lec01_files\Frame\build>camke --build .
+'camke' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+
+(base) S:\us\homework\c++\01\lec01_files\Frame\build>cmake --build .
+适用于 .NET Framework MSBuild 版本 17.13.15+18b3035f6
+
+  1>Checking Build System
+  Building Custom Rule S:/us/homework/c++/01/lec01_files/Frame/CMakeLists.txt
+  frame.cpp
+  frame.vcxproj -> S:\us\homework\c++\01\lec01_files\Frame\build\Debug\frame.exe
+  Building Custom Rule S:/us/homework/c++/01/lec01_files/Frame/CMakeLists.txt
+
+(base) S:\us\homework\c++\01\lec01_files\Frame\build>cd Debug
+
+(base) S:\us\homework\c++\01\lec01_files\Frame\build\Debug>frame.exe
+What's your name? hongruicao
+
+******************************
+*                            *
+*                            *
+*                            *
+*                            *
+*                            *
+*     Hello, hongruicao!     *
+*                            *
+*                            *
+*                            *
+*                            *
+*                            *
+******************************
+
+(base) S:\us\homework\c++\01\lec01_files\Frame\build\Debug>cd ../
+
+(base) S:\us\homework\c++\01\lec01_files\Frame\build>cd ../..
+
+(base) S:\us\homework\c++\01\lec01_files>cd Frame2
+
+(base) S:\us\homework\c++\01\lec01_files\Frame2>mkdir build
+
+(base) S:\us\homework\c++\01\lec01_files\Frame2>cd build
+
+(base) S:\us\homework\c++\01\lec01_files\Frame2\build>cmake ..
+-- Building for: Visual Studio 17 2022
+CMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+-- Selecting Windows SDK version 10.0.22621.0 to target Windows 10.0.26100.
+-- The C compiler identification is MSVC 19.43.34808.0
+-- The CXX compiler identification is MSVC 19.43.34808.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.43.34808/bin/Hostx64/x64/cl.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.43.34808/bin/Hostx64/x64/cl.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (2.8s)
+-- Generating done (0.0s)
+-- Build files have been written to: S:/us/homework/c++/01/lec01_files/Frame2/build
+
+(base) S:\us\homework\c++\01\lec01_files\Frame2\build>cmake --build .
+适用于 .NET Framework MSBuild 版本 17.13.15+18b3035f6
+
+  1>Checking Build System
+  Building Custom Rule S:/us/homework/c++/01/lec01_files/Frame2/CMakeLists.txt
+  frame2.cpp
+  frame2.vcxproj -> S:\us\homework\c++\01\lec01_files\Frame2\build\Debug\frame2.exe
+  Building Custom Rule S:/us/homework/c++/01/lec01_files/Frame2/CMakeLists.txt
+
+(base) S:\us\homework\c++\01\lec01_files\Frame2\build>cd Debug         
+
+(base) S:\us\homework\c++\01\lec01_files\Frame2\build\Debug>frame2.exe
+What's your name? hongruicao
+
+**********************
+*                    *
+* Hello, hongruicao! *
+*                    *
+**********************

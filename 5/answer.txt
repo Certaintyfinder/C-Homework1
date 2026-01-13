@@ -1,0 +1,5 @@
+Because in C language, the operator ++ means increment the value by 1. So C++ implies it is the next version of C, or 'C plus one'.
+
+As for why not ++C, I think there are two reasons:
+1.we usually write variable++ (increment would be done after we use it,for myself,i usually write them alone as a sentence) more often in loops, so C++ feels more natural to read.
+2.In programming, x++ returns the old value first, while ++x returns the new value. So if we call it C++, it technically means we are still using the old C! But I think the creator just wanted to say it is an advanced C(i think that's why it tries to be compitable with c).

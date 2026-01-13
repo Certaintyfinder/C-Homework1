@@ -1,0 +1,10 @@
+^S:\US\HOMEWORK\C++\01\LEC01_FILES\FRAME\CMAKELISTS.TXT
+setlocal
+S:\c++\CMake\bin\cmake.exe -SS:/us/homework/c++/01/lec01_files/Frame -BS:/us/homework/c++/01/lec01_files/Frame/build --check-stamp-file S:/us/homework/c++/01/lec01_files/Frame/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
